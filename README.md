@@ -15,8 +15,7 @@
     </li>
     <li><a href="#使用方法">使用方法</a></li>
     <li><a href="#下载对应版本">下载版本</a></li>
-
-    <li><a href="#Special thanks to: new scripts actor">Special thanks to: new scripts actor</a></li>
+    <li><a href="#特别感谢">特别感谢</a></li>
   </ol>
 </details>
 
@@ -71,7 +70,7 @@ Download correct package from [releases](https://github.com/erxiaowang417/carpla
 * ```sudo ./{AppImage} --no-sandbox```
 
 
-## Special thanks to: new scripts actor
+## 特别感谢
 
 
 * [@rhysmorgan134]( https://github.com/rhysmorgan134)
