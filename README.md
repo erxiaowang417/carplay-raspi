@@ -69,6 +69,8 @@ Download correct package from [releases](https://github.com/erxiaowang417/carpla
 * ```chmod +x {AppImage}```
 * ```sudo ./{AppImage} --no-sandbox```
 
+## npm packages
+* [raspberry-info](https://www.npmjs.com/package/raspberry-info)  从 Raspberry 获取信息的模块。GPU 温度和 CPU 温度、序列号、IP 等信息（仅限 Linux）
 
 ## 特别感谢
 
