@@ -19,7 +19,7 @@
   </ol>
 </details>
 
-![home](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/home.png)
+home<img src="[https://img-blog.csdnimg.cn/2020102116384135.png](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/home.png)" width="50px">
 ![bord](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-1.png)
 ![bord](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-2.png)
 ![doge](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/doge.png)
