@@ -19,10 +19,12 @@
   </ol>
 </details>
 
-home<img src="[https://img-blog.csdnimg.cn/2020102116384135.png](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/home.png)" width="50px">
-![bord](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-1.png)
-![bord](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-2.png)
-![doge](https://github.com/erxiaowang417/carplay-raspi/blob/main/png/doge.png)
+
+<img src="https://github.com/erxiaowang417/carplay-raspi/blob/main/png/home.png" width="600"  alt="home">
+<img src="https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-1.png" width="600"  alt="bord">
+<img src="https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-2.png" width="600"  alt="bord">
+<img src="https://github.com/erxiaowang417/carplay-raspi/blob/main/png/doge.png" width="600"  alt="doge">
+
 ## 项目基础 
 * [react](https://react.docschina.org/)
 用于构建用户界面的 JavaScript 库
