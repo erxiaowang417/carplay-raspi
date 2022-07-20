@@ -19,8 +19,11 @@
   </ol>
 </details>
 
-
-
+![node carplay Screen Shot]
+(https://github.com/erxiaowang417/carplay-raspi/blob/main/png/home.png)
+(https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-1.png)
+(https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-2.png)
+(https://github.com/erxiaowang417/carplay-raspi/blob/main/png/doge.png)
 ## 项目基础 
 * [react](https://react.docschina.org/)
 用于构建用户界面的 JavaScript 库
