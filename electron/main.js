@@ -15,6 +15,9 @@ const settings = new Settings()
 const Carplay = require('./modules/Carplay')
 const keys = require('./bindings.json')
 let buffers = []
+const raspiInfo = require('./modules/raspberry-info');
+
+
 
 let wss;
 wss = new WebSocket.Server({ port: 3001 , perMessageDeflate: false});
@@ -55,8 +58,53 @@ app.on('activate', function () {
 
 
 /************function****************/ 
+let msg={Cpu_t:45.5,Gpu_t:45.5,Ram_useage:30.5};
+raspiInfo.getGPUTemperature(false).then(output =>{
+    msg.Gpu_t=parseFloat(output).toFixed(1)
+    console.log( msg.Gpu_t)
+    });
+raspiInfo.getCPUTemperature(false).then(output => {
+    msg.Cpu_t= parseFloat(output).toFixed(1)
+    console.log( msg.Cpu_t)
+    });
 
-function createWindow() {
+
+raspiInfo.getCPUTemperature(false).then(output => {
+        msg.Cpu_t= parseFloat(output).toFixed(1)
+        console.log( msg.Cpu_t)
+    });
+
+    
+
+async function boardInfo(){
+    let out;
+    await raspiInfo.getRaspiInfo().then(output => {
+        out=output    
+    });
+    msg.Ram_useage=out.MemoryUsage
+    msg.Cpu_t=out.CPU
+    msg.Gpu_t=out.GPU
+}
+boardInfo();
+async function Info(){
+    // await getCurrentTime()
+    // qui set  6 16:50:57 -03 2018 @ host
+    //gpu
+    // await getGPUTemp() 
+    //     // 39.7°C
+    // //cpu
+    // await getCPUTemp()
+    //     // 40.2°C
+    // //all memory
+    // // await getMemory()   
+    //     // 764720 kB
+    // // Get memory usage
+    // await getMUsage()  
+    await boardInfo()
+}
+
+
+async function createWindow() {
     const startUrl = process.env.ELECTRON_START_URL || url.format({
         pathname: path.join(__dirname, '../index.html'),
         protocol: 'file:',
@@ -96,6 +144,8 @@ function createWindow() {
     mainWindow.on('closed', function () {
         mainWindow = null;
     });
+
+    
     const config = {
         dpi: settings.store.get('dpi'),
         nightMode: 0,
@@ -130,16 +180,22 @@ function createWindow() {
     })
     ipcMain.on('click', (event, data) => {
         carplay.sendTouch(data.type, data.x, data.y)
-        if(data.type === 16&&data.x>0.965&&data.y<0.045 ){
-	        console.log(data.type, data.x, data.y)
-            mainWindow.minimize()
-        }
-        
+    })
+    ipcMain.on('miniwindow', (event, data) => {
+            mainWindow.minimize()       
     })
 
-    ipcMain.on('min', e => mainWindow.minimize())
-    ipcMain.on('max', e => mainWindow.maximize())
-    ipcMain.on('close', e => mainWindow.close())
+    ipcMain.on('raspiINFO', (event) => {
+
+            Info();
+
+            mainWindow.webContents.send('allRaspiInfo',msg)
+    })
+    ipcMain.on('raspiboard', (event) => {
+        raspiInfo.getBoardInfo().then(output => {
+            mainWindow.webContents.send('allboardInfo',output)
+        }); 
+    })
 
 
     ipcMain.on("fpsReq", (event) => {
