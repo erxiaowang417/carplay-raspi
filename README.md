@@ -38,7 +38,14 @@ Electron是一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的框
 
 ### 源码仓库
 * react [elctron](https://github.com/rhysmorgan134/react-carplay)
+### 环境配置
+官方网址 https://nodejs.org/zh-cn/download/
+tar 解压
 
+    ln -s （/usr/software/nodejs）/bin/npm   /usr/local/bin/ 
+    ln -s （/usr/software/nodejs）/bin/node   /usr/local/bin/
+    （/usr/software/nodejs）解压目录
+    
 目录
 
     -electron
