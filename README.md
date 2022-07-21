@@ -13,6 +13,7 @@
         <li><a href="#源码仓库">源码仓库</a></li>
       </ul>
     </li>
+    <li><a href="#环境配置">环境配置</a></li>
     <li><a href="#使用方法">使用方法</a></li>
     <li><a href="#下载对应版本">下载版本</a></li>
     <li><a href="#特别感谢">特别感谢</a></li>
@@ -39,7 +40,7 @@ Electron是一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的框
 
 ### 源码仓库
 * react [elctron](https://github.com/rhysmorgan134/react-carplay)
-### 环境配置
+## 环境配置
 官方网址 https://nodejs.org/zh-cn/download/
 tar 解压
 
