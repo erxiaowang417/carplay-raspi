@@ -1,0 +1,62 @@
+.raspi-info-Space{
+    height: 186px;
+    width: 640px;
+    position: absolute;
+    text-align: center;
+    margin-left: -320px;
+    left: 50%;
+    margin-bottom: -15px;
+    top: 50%;
+    margin-top: -93px;
+    background-color: #515151;
+}
+.raspi-info-Cpu{
+    height: 180x;
+    width: 180x;
+    background-color: #00000000;
+    border-width: 0; 
+}
+.cpu-text{
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    text-align: center;
+    margin-left: 0px;
+    left: 76px;
+    margin-bottom: 0px;
+    bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+.cpu-name{
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    text-align: center;
+    margin-bottom: -40px;
+    bottom: 0px;
+    font-size: 22px;
+    color: #d8cd00
+}
+.title-name{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    margin-left: -100px;
+    left: 50%;
+    margin-top: -25px;
+    top: 10%;
+    font-size: 30px;
+    color: aquamarine;
+}
+.raspi-exit-Button {
+    height: 64px;
+    width: 64px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -32px;
+    border-radius: 14px;
+    z-index: 1010;
+}
