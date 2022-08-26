@@ -16,6 +16,7 @@
     <li><a href="#环境配置">环境配置</a></li>
     <li><a href="#使用方法">使用方法</a></li>
     <li><a href="#下载对应版本">下载版本</a></li>
+    <li><a href="#更新内容">更新内容</a></li>
     <li><a href="#特别感谢">特别感谢</a></li>
   </ol>
 </details>
@@ -76,6 +77,16 @@ tar 解压
 ## 下载对应版本
 
 Download correct package from [releases](https://github.com/erxiaowang417/carplay-raspi/releases)
+
+## 更新内容
+
+**仪表盘ui**
+#### 2021-9-8 14:45 
+
+    更新仪表盘ui
+    [源码地址](https://raw.githubusercontent.com/erxiaowang417/carplay-raspi/main/compnents/raspiInfo.js)
+<img src="https://github.com/erxiaowang417/carplay-raspi/blob/main/png/raspi-3.png" width="100"  alt="仪表盘">
+
 
 ## 使用方法
 
